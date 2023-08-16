@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style type="text/css">
+        *{padding:0;margin:0;box-sizing: border-box;}
+        
+        header{
+            width: 100%;
+            height:100vh;
+            background-image: url('img1.jpg');
+            background-size: cover;
+            font-family: "Poppins", sans-serif ;
+        }
+
+        nav{
+            width: 100%;
+            height:100px;
+            color:rgb(244, 213, 11);
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2.5em;
+            font-weight: bolder;
+            font-style:bold ;            
+            letter-spacing: 1.2px;
+            color:darkorange;
+        }
+        .logo span{
+            color: aqua;
+        }
+        .menu a{
+            text-decoration: none;
+            color: rgb(244, 213, 11);
+            padding: 10px 20px;
+            font-size: 18 px;
+            position: relative;
+
+        }
+
+        .menu a:before{
+            content:'';
+            position: absolute;
+            top:0;
+            left:0;
+            width:0%;
+            height:100%;
+            border-bottom: 2px solid red;
+            transition: 0.4sec linear ease;
+        }
+
+        .menu a:hover:before{
+             width:90%
+        }
+        .signup a{
+            text-decoration: none;
+            color: rgb(244, 213, 11);
+            
+            padding: 10px 20px;
+            font-size: 20px;
+            background: rgb(190, 60, 60);
+            border-radius: 8px;
+            transition: 0.4sec;
+
+        }
+
+
+        .signup a:hover{
+            background: transparent;
+            border:1px solid red;
+
+        }
+        .h-txt{
+            max-width: 650px;
+            position: absolute;
+            top: 70%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            text-align:center;
+            color: black;
+
+
+        }
+        .h-txt:hover{
+            max-width: 650px;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            text-align:center;
+            color: green;
+            font-style: italic;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+        }
+        .h-txt span{
+            font-size: 3.0em;
+            letter-spacing: 5px;
+
+        }
+        .h-txt h1{
+            font-size: 2.5em;
+        }
+        .h-txt a{
+            text-decoration: none;
+            background-color: black;
+            color: aliceblue;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            transition: 0.4sec;
+            font-style: oblique;
+            border-radius: 3px;
+            top: 70%;
+        }
+        .h-txt a:hover{
+            background: Black;
+            border:1px solid red;
+            font-size: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 1px red;
+            transition: all .3s ease-in-out;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><span>FOOD PARADISE</span></div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Categories</a>
+                <a href="#">Best offer</a>
+                <a href="#">Our Site</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="signup">
+                <a href="#">Signup</a>
+            </div>
+        </nav>
+
+        <section class="h-txt">
+            <span><b>Food Paradise</b></span>
+            <h1>Here's the solution of your Hunger!!</h1>
+            <br>
+            <a href="#"><b>Order your Delicious Food</b></a>
+            
+        </section>
+    </header>
+    
+</body>
+</html>
